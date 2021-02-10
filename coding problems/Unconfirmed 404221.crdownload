@@ -1,0 +1,10 @@
+def change():
+    coins=input().split()
+    coins=[int(i) for i in coins]
+    coins.reverse()
+    t,c=input().split()
+    t=int(t)-int(c)
+    for i in coins:
+        print(i,t//i)
+        t-=i*(t//i)
+change()

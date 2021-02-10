@@ -1,0 +1,14 @@
+def matrix_transpose():
+    s=input()
+    m,n=s.split()
+    m=int(m)
+    n=int(n)
+    s=input()
+    l=s.split()
+    ans=[]
+    for i in range(n):
+        for j in range(m):
+            print(l[i+j*n],end=' ')
+            ans.append(int(l[i+j*n]))
+    return ans
+matrix_transpose()
